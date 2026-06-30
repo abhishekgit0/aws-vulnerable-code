@@ -10,7 +10,7 @@ phases:
     commands:
 
 #Static Application Security Scan (SAST scan) using SonarCloud
-      - mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.host.url="https://sonarcloud.io" -Dsonar.organization=javaprojectawskr -Dsonar.projectKey=javaprojectawskr_javaprojectaws -Dsonar.token=$TOKEN
+     - mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.host.url="https://sonarcloud.io" -Dsonar.organization=javaprojectawskr -Dsonar.projectKey=javaprojectawskr_javaprojectaws -Dsonar.token=$TOKEN
 
 #Quality Gates for Static Application Security Scan(SAST) using SonarCloud
 
