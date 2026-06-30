@@ -1,0 +1,13 @@
+version: 0.1
+
+env:
+  secrets-manager:
+    TOKEN: "Sonarcloud_token:tokenForSonar"
+    
+phases:
+  build:
+    commands:
+      - echo Building application...
+      - echo $TOKEN
+      - mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.host.url="https://sonarcloud.io" -Dsonar.organization=javaprojectawskr -Dsonar.projectKey=javaprojectawskr_javaprojectaws -Dsonar.token=$TOKEN
+
